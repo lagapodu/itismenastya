@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+<meta charset=utf-8 />
+<title>Nastya is finding a husband</title>
+
+<script>
+
+
+function displayImage(){
+    var num = Math.floor(Math.random() * 32); // 0...6
+    var num2 = Math.floor(Math.random() * 32); // 0...6
+    document.canvas.src = 'nastya/1 ('+ num + ').jpg';
+    document.canvas_husband.src = 'dev/'+ num2 + '.jpg';
+}
+
+</script>
+<style>
+.myButton {
+	-moz-box-shadow: 0px 0px 0px 0px #3dc21b;
+	-webkit-box-shadow: 0px 0px 0px 0px #3dc21b;
+	box-shadow: 0px 0px 0px 0px #3dc21b;
+	background-color:#44c767;
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:28px;
+	border:8px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:25px 76px;
+	text-decoration:none;
+	text-shadow:0px 1px 26px #2f6627;
+}
+.myButton:hover {
+	background-color:#5cbf2a;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+</style>
+</head>
+<body>
+
+
+<form name="imageForm">
+  <table>
+  <tr>
+    <td>
+      <img src="blank.jpg" name="canvas" />
+    </td>
+    <td>
+      <img src="love.jpg" name="can" />
+    </td>
+    <td>
+      <img src="blank_husband.jpg" name="canvas_husband" />
+    </td>
+  </tr>
+  </table>
+    <input class="myButton" style="align:center" onclick="displayImage();" type=button value="Generate Bitch">
+</form>
+
+</body>
+</html>
